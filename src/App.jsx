@@ -42,12 +42,13 @@ function App() {
     });
 
     res = await res.json();
+    console.log(res)
     setData(res)
   }
 
   useEffect(() => {
     fetchData();
-  });
+  }, []);
 
   return <pre>{JSON.stringify(data, null, 2)}</pre>;
 }
