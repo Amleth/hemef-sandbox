@@ -42,8 +42,7 @@ function App() {
     });
 
     res = await res.json();
-
-    console.log(res);
+    setData(res)
   }
 
   useEffect(() => {
